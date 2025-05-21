@@ -22,7 +22,7 @@ Route::get('setup', 'SetupController@index')->name('setup');
 Route::middleware('auth')->namespace('Auth')->group(
     static function (Router $authRouter) {
         // Logout.
-        $authRouter->get('logout', 'LoginController@logout')->name('logout');
+        $authRouter->get('logout', 'LoginController@logout');
 
         // Profile.
         $authRouter->middleware('verified')->name('profile.')->prefix('profile')->group(
