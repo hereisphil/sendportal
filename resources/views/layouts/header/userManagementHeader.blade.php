@@ -53,9 +53,10 @@
                             class="fas fa-layer-group mr-2 color-gray-300"></i>{{ __('API Tokens') }}</a>
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item px-3" href="{{ route('logout') }}"
-                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
-                            class="fas fa-sign-out-alt mr-2 color-gray-300"></i>Log out</a>
+                <a class="dropdown-item px-3" href="/logout" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    <i class="fas fa-sign-out-alt mr-2 color-gray-300"></i>Log out
+                </a>
             </div>
         </li>
     </ul>
